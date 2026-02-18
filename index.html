@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/fav.png">  
+    <link rel="apple-touch-icon" href="images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="/">Home</a>
+            <hr>
+            <p>Services</p>
+            <a href="/hybrid-apps/">Hybrid Apps</a>
+            <a href="/ios-development/">iOS Development</a>
+            <a href="/android-development/">Android Development</a>
+            <a href="/store-publishing/">Store Publishing</a>
+            <a href="/tv-apps/">TV Apps</a>
+            <hr>
+            <a href="/about-us/">About Us</a>
+            <a href="/team/">Our Team</a>
+            <a href="/contacts/">Contacts</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Turning Ideas into <span class="text-orange">Profitable Businesses.</span></h1>
+                <p>Mobile app development with guaranteed ROI. From initial design to reaching the top of the App Store and Google Play.</p>
+                <div class="hero-btns">
+                    <button class="btn-orange btn-lg" onclick="toggleModal(true)">Discuss a Project</button>
+                    <a href="#calculator" class="btn-outline btn-lg">Calculate Cost</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator" class="section-padding bg-cream">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project Cost Calculator</h2>
+                    <p>Get an instant estimate for your mobile application</p>
+                </div>
+
+                <div class="calc-box">
+                    <div class="calc-step active" data-step="1">
+                        <h3>1. Select Platform</h3>
+                        <div class="calc-grid">
+                            <label class="calc-option">
+                                <input type="radio" name="platform" value="2000" checked>
+                                <div class="opt-card">iOS App</div>
+                            </label>
+                            <label class="calc-option">
+                                <input type="radio" name="platform" value="2000">
+                                <div class="opt-card">Android App</div>
+                            </label>
+                            <label class="calc-option">
+                                <input type="radio" name="platform" value="3500">
+                                <div class="opt-card">Hybrid (Both)</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="calc-step" data-step="2">
+                        <h3>2. Features & Auth</h3>
+                        <div class="calc-grid">
+                            <label class="calc-option">
+                                <input type="radio" name="auth" value="0" checked>
+                                <div class="opt-card">No Auth</div>
+                            </label>
+                            <label class="calc-option">
+                                <input type="radio" name="auth" value="800">
+                                <div class="opt-card">Social Login</div>
+                            </label>
+                            <label class="calc-option">
+                                <input type="radio" name="auth" value="1500">
+                                <div class="opt-card">OTP / Phone</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="calc-step" data-step="3">
+                        <h3>3. Design Level</h3>
+                        <div class="calc-grid">
+                            <label class="calc-option">
+                                <input type="radio" name="design" value="500" checked>
+                                <div class="opt-card">MVP Design</div>
+                            </label>
+                            <label class="calc-option">
+                                <input type="radio" name="design" value="1500">
+                                <div class="opt-card">Custom UI/UX</div>
+                            </label>
+                            <label class="calc-option">
+                                <input type="radio" name="design" value="3000">
+                                <div class="opt-card">Premium / 3D</div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="calc-footer">
+                        <button id="prevBtn" class="btn-secondary" disabled>Back</button>
+                        <button id="nextBtn" class="btn-orange">Next Step</button>
+                    </div>
+
+                    <div id="calcResult" class="calc-result-overlay">
+                        <h3>Your Estimate Ready</h3>
+                        <div class="price-box" id="priceRange">$0 - $0</div>
+                        <form id="calcEmailForm">
+                            <input type="email" placeholder="Your Email" required>
+                            <button type="submit" class="btn-orange">Send Detailed Proposal</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Industries We Empower</h2>
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="icon">🛒</div>
+                        <h3>E-commerce</h3>
+                        <p>High-load marketplaces with seamless checkout.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">💳</div>
+                        <h3>Fintech</h3>
+                        <p>Secure banking and crypto-processing solutions.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">🍕</div>
+                        <h3>Foodtech</h3>
+                        <p>Delivery systems and restaurant aggregators.</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon">🏥</div>
+                        <h3>Health</h3>
+                        <p>Telemedicine and fitness tracking apps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-cream">
+            <div class="container">
+                <div class="section-header">
+                    <h2>4 Steps to Success</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <span class="step-num">01</span>
+                        <h4>Discovery</h4>
+                        <p>Market niche analysis and technical roadmap.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">02</span>
+                        <h4>Design</h4>
+                        <p>Interactive prototypes and high-end UI.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">03</span>
+                        <h4>Dev</h4>
+                        <p>Agile coding with weekly demonstrations.</p>
+                    </div>
+                    <div class="step-item">
+                        <span class="step-num">04</span>
+                        <h4>Release</h4>
+                        <p>Store publication and post-launch support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
