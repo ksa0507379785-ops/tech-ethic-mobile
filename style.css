@@ -746,3 +746,70 @@ body {
     .challenges-box { padding: 30px 20px; }
 }
 
+/* TV Apps Specific Styling */
+.badge-orange { background: var(--orange); }
+.micro-features.light span { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); }
+
+/* TV Visual Mockup */
+.tv-frame { width: 320px; margin: 0 auto; }
+.tv-screen { 
+    width: 100%; 
+    aspect-ratio: 16 / 9; 
+    background: #333; 
+    border: 10px solid #444; 
+    border-radius: 10px; 
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.tv-content-mock {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1e272e, #2d3436);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tv-content-mock::after {
+    content: '▶';
+    color: var(--orange);
+    font-size: 40px;
+}
+.tv-stand {
+    width: 60px;
+    height: 20px;
+    background: #444;
+    margin: 0 auto;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+/* Monetization Grid */
+.monetization-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+    margin-top: 40px; 
+}
+.mon-item { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    text-align: center; 
+    transition: 0.3s;
+}
+.mon-item:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.mon-icon { font-size: 40px; display: block; margin-bottom: 15px; }
+
+/* Tech Stack Vertical */
+.tech-stack-v { 
+    flex: 0 0 200px; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+.tech-stack-v h3 { font-size: 18px; margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+    .tech-stack-v { flex-direction: row; flex-wrap: wrap; margin-top: 30px; }
+}
+
