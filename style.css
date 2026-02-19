@@ -620,3 +620,95 @@ body {
     .tech-stack { justify-content: center; }
 }
 
+/* Android Page Styling */
+.h-process {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.p-step {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    position: relative;
+}
+
+.p-num {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    font-weight: 800;
+    font-size: 14px;
+    z-index: 2;
+    position: relative;
+}
+
+.p-line {
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    z-index: 1;
+}
+
+.p-step:last-child .p-line { display: none; }
+
+.p-step h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* Визуал для Hero (заглушка под девайс) */
+.android-box {
+    width: 280px;
+    height: 400px;
+    border: 8px solid #333;
+    border-radius: 30px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+}
+
+.tech-label {
+    background: var(--orange);
+    color: white;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 12px;
+    transform: rotate(-5deg);
+}
+
+@media (max-width: 768px) {
+    .h-process {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+    .p-step {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .p-line {
+        left: -27px;
+        top: 45px;
+        width: 2px;
+        height: 100%;
+    }
+}
