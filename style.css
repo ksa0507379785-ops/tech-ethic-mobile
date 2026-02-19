@@ -965,3 +965,54 @@ body {
 }
 
 
+/* Privacy Policy Styles */
+.policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.last-updated {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.policy-text h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.policy-text p {
+    line-height: 1.8;
+    color: #636e72;
+    margin-bottom: 15px;
+}
+
+.policy-text ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.policy-text li {
+    line-height: 1.8;
+    color: #636e72;
+    margin-bottom: 8px;
+}
+
+.policy-text a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .policy-container {
+        padding: 30px 20px;
+    }
+}
