@@ -813,3 +813,40 @@ body {
     .tech-stack-v { flex-direction: row; flex-wrap: wrap; margin-top: 30px; }
 }
 
+/* About Us Styles */
+.about-hero { text-align: center; padding: 80px 0; }
+.lead-text { font-size: 20px; color: #636e72; max-width: 700px; margin: 20px auto 0; line-height: 1.6; }
+
+.founder-flex { display: flex; align-items: center; gap: 60px; margin-top: 40px; }
+.founder-image { flex: 0 0 300px; }
+.photo-placeholder { 
+    width: 300px; height: 350px; background: #eee; border-radius: 20px; 
+    display: flex; align-items: center; justify-content: center; 
+    font-size: 60px; font-weight: 800; color: #ccc; border: 2px solid #ddd;
+}
+.founder-text blockquote { 
+    font-size: 24px; font-weight: 700; color: var(--text); 
+    border-left: 4px solid var(--orange); padding-left: 20px; margin: 20px 0; 
+}
+
+.mission-box { text-align: center; max-width: 800px; margin: 0 auto 50px; }
+.mission-box h2 { font-size: 36px; margin-bottom: 20px; }
+
+.values-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+.value-card { 
+    background: white; padding: 15px 30px; border-radius: 50px; 
+    border: 1px solid #eee; font-weight: 700; color: var(--orange);
+}
+
+.approach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+.approach-item { padding: 30px; background: #fdfdfd; border-radius: 15px; transition: 0.3s; }
+.approach-item:hover { background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.app-num { font-size: 40px; font-weight: 800; color: rgba(255, 121, 63, 0.2); display: block; margin-bottom: 10px; }
+
+.final-cta h2 { font-size: 32px; margin-bottom: 20px; }
+.final-cta p { opacity: 0.8; max-width: 600px; margin: 0 auto 30px; line-height: 1.6; }
+
+@media (max-width: 768px) {
+    .founder-flex { flex-direction: column; text-align: center; }
+    .founder-text blockquote { border-left: none; border-top: 4px solid var(--orange); padding: 20px 0 0; }
+}
