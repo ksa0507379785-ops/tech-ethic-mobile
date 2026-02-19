@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="policy-container">
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Last Updated: February 19, 2026</p>
+
+                <div class="policy-text">
+                    <h3>1. Introduction</h3>
+                    <p>ARVO MOBILE ("we", "our", or "us") operates the website arvomobile.com. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+
+                    <h3>2. Information Collection and Use</h3>
+                    <p>While using our website, specifically when filling out the project inquiry forms, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information includes, but is not limited to:</p>
+                    <ul>
+                        <li><strong>Full Name:</strong> To address you personally in our communications.</li>
+                        <li><strong>Email Address:</strong> To respond to your inquiries and send project proposals.</li>
+                        <li><strong>Project Details:</strong> Information about your business, chosen service (iOS, Android, TV), and project requirements to provide an accurate estimate.</li>
+                    </ul>
+
+                    <h3>3. Use of Data</h3>
+                    <p>ARVO MOBILE uses the collected data for various purposes:</p>
+                    <ul>
+                        <li>To provide and maintain our Service.</li>
+                        <li>To notify you about changes to our Service.</li>
+                        <li>To provide customer support and project consultations.</li>
+                        <li>To gather analysis or valuable information so that we can improve our Service.</li>
+                    </ul>
+
+                    <h3>4. Data Protection & Confidentiality</h3>
+                    <p>The security of your data is important to us. We do not sell, trade, or otherwise transfer your Personal Data to outside parties. This does not include trusted third parties who assist us in operating our website or conducting our business, so long as those parties agree to keep this information confidential (e.g., NDA agreements).</p>
+
+                    <h3>5. Cookies</h3>
+                    <p>We use cookies and similar tracking technologies to track the activity on our Service and hold certain information to improve your user experience on our website.</p>
+
+                    <h3>6. Third-Party Links</h3>
+                    <p>Our website may contain links to other sites (such as LinkedIn, App Store, or Google Play). If you click on a third-party link, you will be directed to that site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+
+                    <h3>7. Your Rights</h3>
+                    <p>You have the right to request the deletion of your personal data from our records. To do so, please contact us at <a href="mailto:hello@arvomobile.com">hello@arvomobile.com</a>.</p>
+
+                    <h3>8. Changes to This Privacy Policy</h3>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+                    <h3>9. Contact Us</h3>
+                    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                    <ul>
+                        <li>By email: hello@arvomobile.com</li>
+                        <li>By visiting the <a href="/contacts/">Contacts</a> page on our website.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
