@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+<main>
+    <section class="service-hero bg-cream">
+        <div class="container">
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="badge">Efficiency First</span>
+                    <h1>Hybrid App <span class="text-orange">Development</span></h1>
+                    <p>Build one high-quality app that works perfectly on both iOS and Android. Save time and budget without compromising on performance.</p>
+                    <button class="btn-orange" onclick="toggleModal(true)">Start My Project</button>
+                </div>
+                <div class="hero-visual">
+                    <div class="hybrid-logic">
+                        <div class="logic-box code-box">Single Codebase</div>
+                        <div class="logic-arrow"></div>
+                        <div class="platforms">
+                            <div class="plat-icon">iOS</div>
+                            <div class="plat-icon">Android</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Is Hybrid Right for You?</h2>
+                <p>Hybrid development is the perfect match for 80% of modern business tasks.</p>
+            </div>
+            <div class="choice-grid">
+                <div class="choice-card">
+                    <div class="choice-icon">🚀</div>
+                    <h3>Startups & MVPs</h3>
+                    <p>Launch your product to the whole market twice as fast.</p>
+                </div>
+                <div class="choice-card">
+                    <div class="choice-icon">💰</div>
+                    <h3>Limited Budget</h3>
+                    <p>Get two apps for nearly the price of one.</p>
+                </div>
+                <div class="choice-card">
+                    <div class="choice-icon">🏢</div>
+                    <h3>Corporate Tools</h3>
+                    <p>Perfect for internal employee apps and CRM mirrors.</p>
+                </div>
+                <div class="choice-card">
+                    <div class="choice-icon">⏱️</div>
+                    <h3>Time-to-Market</h3>
+                    <p>Ideal when you need to beat competitors to the App Store.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-alt">
+        <div class="container">
+            <div class="benefit-flex">
+                <div class="benefit-info">
+                    <h2>Key Advantages</h2>
+                    <ul class="benefit-list">
+                        <li><strong>Save up to 40%</strong> of the total development budget.</li>
+                        <li><strong>Unified Support:</strong> one update fixes bugs on both platforms.</li>
+                        <li><strong>Consistent UX:</strong> identical experience for all users.</li>
+                        <li><strong>Instant Updates:</strong> bypass some store review delays.</li>
+                    </ul>
+                </div>
+                <div class="benefit-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">2x</span>
+                        <p>Faster Launch</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">-40%</span>
+                        <p>Costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hybrid vs Native</h2>
+            </div>
+            <div class="table-container">
+                <table class="comp-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight">Hybrid</th>
+                            <th>Native</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Development Speed</td>
+                            <td class="text-orange">Very Fast</td>
+                            <td>Slow</td>
+                        </tr>
+                        <tr>
+                            <td>Cost</td>
+                            <td class="text-orange">Budget Friendly</td>
+                            <td>Expensive</td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td>High</td>
+                            <td class="text-orange">Maximum</td>
+                        </tr>
+                        <tr>
+                            <td>Device Features</td>
+                            <td>Good Access</td>
+                            <td class="text-orange">Full Access</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We Build It</h2>
+            </div>
+            <div class="timeline">
+                <div class="t-item">
+                    <div class="t-dot">1</div>
+                    <div class="t-content"><h4>Discovery</h4><p>Market analysis and technical strategy.</p></div>
+                </div>
+                <div class="t-item">
+                    <div class="t-dot">2</div>
+                    <div class="t-content"><h4>UX/UI Design</h4><p>Cross-platform interactive prototypes.</p></div>
+                </div>
+                <div class="t-item">
+                    <div class="t-dot">3</div>
+                    <div class="t-content"><h4>Development</h4><p>Coding with Flutter or React Native.</p></div>
+                </div>
+                <div class="t-item">
+                    <div class="t-dot">4</div>
+                    <div class="t-content"><h4>QA & Launch</h4><p>Testing and App Store/Google Play publication.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
