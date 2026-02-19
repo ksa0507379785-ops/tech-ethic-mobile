@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="service-hero bg-dark text-white">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <span class="badge badge-orange">Big Screen Experience</span>
+                <h1>Smart TV & Android TV <span class="text-orange">Development</span></h1>
+                <p>We bring your services to the biggest screen in the house with high-performance apps designed for a perfect "lean-back" experience.</p>
+                
+                <div class="micro-features light">
+                    <span>🎮 Remote-First UX</span>
+                    <span>🎬 4K/HDR Support</span>
+                    <span>🚀 Store Publication</span>
+                    <span>🔄 Multi-device Sync</span>
+                </div>
+                
+                <button class="btn-orange" onclick="toggleModal(true)">Start TV Project</button>
+            </div>
+            <div class="hero-visual">
+                <div class="tv-frame">
+                    <div class="tv-screen">
+                        <div class="tv-content-mock"></div>
+                    </div>
+                    <div class="tv-stand"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Target Platforms</h2>
+                <p>We develop for the leaders of the Smart TV market.</p>
+            </div>
+            <div class="platforms-flex">
+                <div class="platform-card tv-card">
+                    <div class="plat-header">
+                        <span class="plat-logo">🤖</span>
+                        <h3>Android TV / Google TV</h3>
+                    </div>
+                    <ul class="plat-list">
+                        <li>OTT & IPTV Services</li>
+                        <li>Online Cinemas</li>
+                        <li>Corporate TV Networks</li>
+                        <li>Media Platforms</li>
+                    </ul>
+                </div>
+                <div class="platform-card tv-card">
+                    <div class="plat-header">
+                        <span class="plat-logo"></span>
+                        <h3>Apple TV (tvOS)</h3>
+                    </div>
+                    <ul class="plat-list">
+                        <li>Premium Video Services</li>
+                        <li>Education Platforms</li>
+                        <li>Live Sports Streaming</li>
+                        <li>Interactive Media Content</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solutions We Build</h2>
+            </div>
+            <div class="publishing-grid">
+                <div class="pub-card"><h4>OTT & IPTV</h4><p>Full-featured TV broadcasting solutions.</p></div>
+                <div class="pub-card"><h4>Streaming Platforms</h4><p>Stable 4K video delivery at any scale.</p></div>
+                <div class="pub-card"><h4>Online Cinemas</h4><p>Rich libraries with smart search & filters.</p></div>
+                <div class="pub-card"><h4>Event Apps</h4><p>Live streams and interactive event schedules.</p></div>
+                <div class="pub-card"><h4>Enterprise TV</h4><p>Internal communication for offices & lobbies.</p></div>
+                <div class="pub-card"><h4>TV E-commerce</h4><p>Shop from your couch with remote-friendly UI.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container tech-flex">
+            <div class="tech-content">
+                <h2>TV is Not Just a Big Phone</h2>
+                <p>A TV app requires a completely different approach to design and performance. We focus on the "10-foot UI" principles to ensure comfort and speed.</p>
+                <div class="tech-benefits">
+                    <div class="benefit-item-small">
+                        <h4>D-Pad Optimization</h4>
+                        <p>Perfect navigation using only a standard remote control.</p>
+                    </div>
+                    <div class="benefit-item-small">
+                        <h4>Focus Management</h4>
+                        <p>Clear visual states so users never lose their place.</p>
+                    </div>
+                    <div class="benefit-item-small">
+                        <h4>Big Screen UX</h4>
+                        <p>High contrast, large fonts, and readable layouts.</p>
+                    </div>
+                    <div class="benefit-item-small">
+                        <h4>Streaming Tech</h4>
+                        <p>Adaptive bitrate (HLS/DASH) for smooth playback on any Wi-Fi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack-v">
+                <h3>Tech Stack</h3>
+                <div class="tech-tag">Kotlin</div>
+                <div class="tech-tag">Swift</div>
+                <div class="tech-tag">ExoPlayer</div>
+                <div class="tech-tag">AVFoundation</div>
+                <div class="tech-tag">Leanback UI</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-cream">
+        <div class="container">
+            <div class="section-header">
+                <h2>Monetization Models</h2>
+                <p>Turn your TV content into a profitable business.</p>
+            </div>
+            <div class="monetization-grid">
+                <div class="mon-item">
+                    <span class="mon-icon">🎟️</span>
+                    <h4>SVOD</h4>
+                    <p>Subscription-based video on demand.</p>
+                </div>
+                <div class="mon-item">
+                    <span class="mon-icon">💳</span>
+                    <h4>TVOD</h4>
+                    <p>Pay-per-view or transactional access.</p>
+                </div>
+                <div class="mon-item">
+                    <span class="mon-icon">📢</span>
+                    <h4>AVOD</h4>
+                    <p>Ad-supported free content streaming.</p>
+                </div>
+                <div class="mon-item">
+                    <span class="mon-icon">🛒</span>
+                    <h4>In-App</h4>
+                    <p>Purchases and upgrades within the app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>    
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
