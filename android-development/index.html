@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+<main>
+    <section class="service-hero bg-cream">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <span class="badge">Android Expertise</span>
+                <h1>Full-Cycle <span class="text-orange">Android Development</span></h1>
+                <p>We build scalable, fast, and stable applications designed to reach millions of users across the global Android ecosystem.</p>
+                
+                <div class="micro-features">
+                    <span>📱 Native Dev</span>
+                    <span>🤖 Ecosystem Ready</span>
+                    <span>📺 Multi-device Support</span>
+                    <span>🚀 Play Store Launch</span>
+                </div>
+                
+                <button class="btn-orange" onclick="toggleModal(true)">Start Development</button>
+            </div>
+            <div class="hero-visual">
+                <div class="android-box">
+                    <div class="tech-label">Kotlin & Jetpack Compose</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solutions We Build</h2>
+                <p>Robust Android applications for every business niche.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="sol-card"><h3>Startups & MVP</h3></div>
+                <div class="sol-card"><h3>E-commerce</h3></div>
+                <div class="sol-card"><h3>Financial Services</h3></div>
+                <div class="sol-card"><h3>Marketplaces</h3></div>
+                <div class="sol-card"><h3>Enterprise Solutions</h3></div>
+                <div class="sol-card"><h3>High-Load Apps</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-alt">
+        <div class="container tech-flex">
+            <div class="tech-content">
+                <h2>Native Power for Android</h2>
+                <p>We develop native Android apps using modern technologies to ensure high performance, stability, and the flexibility to scale as your business grows.</p>
+                <div class="tech-stack">
+                    <div class="tech-tag">Kotlin</div>
+                    <div class="tech-tag">Java</div>
+                    <div class="tech-tag">Jetpack Compose</div>
+                    <div class="tech-tag">Google APIs</div>
+                </div>
+            </div>
+            <div class="tech-benefits">
+                <div class="benefit-item-small">
+                    <h4>Massive Audience</h4>
+                    <p>Access the largest share of mobile users worldwide.</p>
+                </div>
+                <div class="benefit-item-small">
+                    <h4>Platform Flexibility</h4>
+                    <p>Deep customization options for unique user experiences.</p>
+                </div>
+                <div class="benefit-item-small">
+                    <h4>Google Integration</h4>
+                    <p>Seamless connection with Maps, Drive, Pay, and Cloud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Development Process</h2>
+            </div>
+            <div class="h-process">
+                <div class="p-step">
+                    <span class="p-num">01</span>
+                    <div class="p-line"></div>
+                    <h4>Analytics</h4>
+                </div>
+                <div class="p-step">
+                    <span class="p-num">02</span>
+                    <div class="p-line"></div>
+                    <h4>UX/UI Design</h4>
+                </div>
+                <div class="p-step">
+                    <span class="p-num">03</span>
+                    <div class="p-line"></div>
+                    <h4>Development</h4>
+                </div>
+                <div class="p-step">
+                    <span class="p-num">04</span>
+                    <div class="p-line"></div>
+                    <h4>API Integration</h4>
+                </div>
+                <div class="p-step">
+                    <span class="p-num">05</span>
+                    <div class="p-line"></div>
+                    <h4>Testing</h4>
+                </div>
+                <div class="p-step">
+                    <span class="p-num">06</span>
+                    <div class="p-line"></div>
+                    <h4>Publication</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white">
+        <div class="container pub-box">
+            <div class="pub-icon">🚀</div>
+            <div class="pub-text">
+                <h2>Google Play Publication</h2>
+                <p>We handle the full submission cycle: creating the Play Store page, optimizing descriptions (ASO), preparing graphics, and ensuring a smooth moderation process.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
