@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="about-hero bg-cream">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1>About <span class="text-orange">ARVO MOBILE</span></h1>
+                <p class="lead-text">A result-oriented mobile and TV development agency focused on quality, scalability, and long-term partnership.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="founder-flex">
+                <div class="founder-image">
+                    <div class="photo-placeholder">AM</div>
+                </div>
+                <div class="founder-text">
+                    <span class="badge">Founder's Vision</span>
+                    <blockquote>"We don't just write code — we build products that work for your business."</blockquote>
+                    <h3>Adam Montague</h3>
+                    <p>ARVO MOBILE was founded by Adam Montague to combine strategy, design, and technical expertise under one roof. Our focus is on transparent processes, thoughtful architecture, and the highest development standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-alt">
+        <div class="container">
+            <div class="mission-box">
+                <h2>Our Mission</h2>
+                <p>To create high-tech, user-friendly, and scalable mobile solutions for businesses of all levels — from ambitious startups to large-scale enterprises.</p>
+            </div>
+            
+            <div class="values-grid">
+                <div class="value-card"><h4>Responsibility</h4></div>
+                <div class="value-card"><h4>Professionalism</h4></div>
+                <div class="value-card"><h4>Innovation</h4></div>
+                <div class="value-card"><h4>Integrity</h4></div>
+                <div class="value-card"><h4>Results</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Approach</h2>
+                <p>How we ensure your project succeeds.</p>
+            </div>
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <span class="app-num">01</span>
+                    <h4>Strategy Before Code</h4>
+                    <p>We start with deep analytics and a clear understanding of your business goals.</p>
+                </div>
+                <div class="approach-item">
+                    <span class="app-num">02</span>
+                    <h4>UX as an Advantage</h4>
+                    <p>Design is built entirely around user behavior and seamless interaction.</p>
+                </div>
+                <div class="approach-item">
+                    <span class="app-num">03</span>
+                    <h4>Future-Proof Architecture</h4>
+                    <p>We build solutions that are easy to scale and maintain for years to come.</p>
+                </div>
+                <div class="approach-item">
+                    <span class="app-num">04</span>
+                    <h4>Process Transparency</h4>
+                    <p>You always know exactly what stage your project is at with regular updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white text-center">
+        <div class="container">
+            <div class="final-cta">
+                <h2>We don't just build apps — we build products</h2>
+                <p>ARVO MOBILE is a team of developers, designers, and strategists united by one goal: creating solutions that are a joy to use and a pride to own.</p>
+                <button class="btn-orange" onclick="toggleModal(true)">Let's Work Together</button>
+            </div>
+        </div>
+    </section>
+</main>
+  
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
