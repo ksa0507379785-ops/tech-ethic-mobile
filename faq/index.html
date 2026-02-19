@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<section class="section-padding bg-alt">
+    <div class="container">
+        <div class="section-header faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about our development process</p>
+        </div>
+
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>How much does mobile app development cost?</h3>
+                <p>The cost depends on the project's complexity, number of features, platform (iOS, Android, TV), and design. Simple apps start at a fixed base price, while complex projects are calculated individually after discussing requirements.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>How long does development take?</h3>
+                <p>On average, development takes from 1 to 6 months. The timeline depends on functionality, integrations, design, and the number of platforms.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Do you develop for iOS and Android simultaneously?</h3>
+                <p>Yes. We create native apps for iOS and Android, as well as hybrid solutions that work across multiple platforms at once.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Native or Hybrid: which should I choose?</h3>
+                <p>Native development provides maximum performance and flexibility. Hybrid apps allow for a faster market launch and a reduced budget. We will help you choose the optimal variant for your specific goals.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Do you help with App Store and Google Play publication?</h3>
+                <p>Yes. We fully manage the publication process, including account setup, app store optimization (ASO), build uploading, and passing moderation.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Do you provide post-launch support?</h3>
+                <p>Yes. We offer technical support, updates, bug fixes, and feature evolution after the initial release.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Can I order only the app design?</h3>
+                <p>Yes, you can order UX/UI design as a standalone service. We create prototypes, user journeys, and full visual concepts.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Do you sign a contract and an NDA?</h3>
+                <p>Yes. We work officially under a contract and sign a Non-Disclosure Agreement (NDA) to protect your intellectual property.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Can the app be integrated with CRM or third-party services?</h3>
+                <p>Yes. We integrate apps with CRM systems, payment gateways, APIs, analytics, and other external platforms.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-num">?</div>
+                <h3>Do you develop apps for Smart TV?</h3>
+                <p>Yes. We create applications for TV platforms, including Android TV and other Smart TV solutions.</p>
+            </div>
+        </div>
+
+        <div class="faq-cta">
+            <p>Still have questions?</p>
+            <button class="btn-orange" onclick="toggleModal(true)">Get a Free Consultation</button>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
