@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARVO MOBILE</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/fav.png">  
+    <link rel="apple-touch-icon" href="../images/fav.png">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="ARVO MOBILE">
+            </a>
+
+            <nav class="desktop-nav">
+                <div class="dropdown">
+                    <button class="dropbtn">Services ▾</button>
+                    <div class="dropdown-content">
+                        <a href="/hybrid-apps/">Hybrid Apps</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/store-publishing/">Store Publishing</a>
+                        <a href="/tv-apps/">TV Apps</a>
+                    </div>
+                </div>
+                <a href="/contacts/">Contacts</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-orange" onclick="toggleModal(true)">Request a Quote</button>
+                <button class="hamburger" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+<main>
+    <section class="service-hero bg-cream">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <span class="badge">iOS Expertise</span>
+                <h1>Professional iOS <span class="text-orange">App Development</span></h1>
+                <p>We build fast, stable, and scalable applications specifically designed for the iPhone and iPad ecosystem.</p>
+                
+                <div class="micro-features">
+                    <span>✓ Native Development</span>
+                    <span>✓ Apple Standards</span>
+                    <span>✓ Store Publication</span>
+                    <span>✓ Post-launch Support</span>
+                </div>
+                
+                <button class="btn-orange" onclick="toggleModal(true)">Get a Free Quote</button>
+            </div>
+            <div class="hero-visual">
+                <div class="ios-mockup">
+                    <div class="swift-tag">Swift & SwiftUI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Solutions We Build</h2>
+                <p>From niche startups to complex enterprise ecosystems.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="sol-card"><h3>Business Apps</h3></div>
+                <div class="sol-card"><h3>Startups & MVP</h3></div>
+                <div class="sol-card"><h3>Marketplaces</h3></div>
+                <div class="sol-card"><h3>Online Services</h3></div>
+                <div class="sol-card"><h3>Fintech & Payments</h3></div>
+                <div class="sol-card"><h3>Corporate Apps</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-alt">
+        <div class="container tech-flex">
+            <div class="tech-content">
+                <h2>Native Power for iOS</h2>
+                <p>We create native applications using Apple's cutting-edge technologies. This ensures maximum performance, fluid animations, and a perfect user experience that feels right at home on any Apple device.</p>
+                <div class="tech-stack">
+                    <div class="tech-tag">Swift</div>
+                    <div class="tech-tag">SwiftUI</div>
+                    <div class="tech-tag">UIKit</div>
+                    <div class="tech-tag">CoreData</div>
+                </div>
+            </div>
+            <div class="tech-benefits">
+                <div class="benefit-item-small">
+                    <h4>Maximum Performance</h4>
+                    <p>Optimized for the latest A-series chips.</p>
+                </div>
+                <div class="benefit-item-small">
+                    <h4>Hardware Access</h4>
+                    <p>Seamless integration with Face ID, LiDAR, and sensors.</p>
+                </div>
+                <div class="benefit-item-small">
+                    <h4>High Security</h4>
+                    <p>Encrypted data storage and secure Apple Pay transactions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Development Process</h2>
+            </div>
+            <div class="v-timeline">
+                <div class="v-step">
+                    <div class="v-dot"></div>
+                    <div class="v-txt"><h4>Analytics & Strategy</h4><p>Defining goals and technical roadmaps.</p></div>
+                </div>
+                <div class="v-step">
+                    <div class="v-dot"></div>
+                    <div class="v-txt"><h4>UX Design</h4><p>Creating seamless user journeys.</p></div>
+                </div>
+                <div class="v-step">
+                    <div class="v-dot"></div>
+                    <div class="v-txt"><h4>UI Design</h4><p>High-end visuals following Human Interface Guidelines.</p></div>
+                </div>
+                <div class="v-step">
+                    <div class="v-dot"></div>
+                    <div class="v-txt"><h4>Coding</h4><p>Clean, maintainable Swift code.</p></div>
+                </div>
+                <div class="v-step">
+                    <div class="v-dot"></div>
+                    <div class="v-txt"><h4>QA Testing</h4><p>Rigorous testing on real iOS devices.</p></div>
+                </div>
+                <div class="v-step">
+                    <div class="v-dot"></div>
+                    <div class="v-txt"><h4>Publication</h4><p>Full support through App Store moderation.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark text-white">
+        <div class="container pub-box">
+            <div class="pub-icon"></div>
+            <div class="pub-text">
+                <h2>App Store Publication</h2>
+                <p>We handle the entire submission process: metadata preparation, screenshots, descriptions, and communication with Apple reviewers to ensure your app goes live without a hitch.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <span class="footer-title">Services</span>
+                <ul>
+                    <li><a href="/hybrid-apps/">Hybrid Apps</a></li>
+                    <li><a href="/ios-development/">iOS Development</a></li>
+                    <li><a href="/android-development/">Android Development</a></li>
+                    <li><a href="/store-publishing/">Store Publishing</a></li>
+                    <li><a href="/tv-apps/">TV Apps</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Company</span>
+                <ul>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/team/">Our Team</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/policy/">Privacy Policy</a></li>
+                    <li><a href="/contacts/">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <span class="footer-title">Contacts</span>
+                <p class="contact-item">Address: 3rd Floor 86-90 Paul Street LONDON, EC2A 4NE United Kingdom</p>
+                <p class="contact-item">Email: <a href="mailto:info@arvomobile.com">info@arvomobile.com</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2026 ARVO MOBILE LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="close-modal" onclick="toggleModal(false)">&times;</button>
+            <h3>Get a Quote</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="btn-orange w-100">Submit Request</button>
+            </form>
+            <p class="legal-text">By submitting, you agree to our Privacy Policy.</p>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
